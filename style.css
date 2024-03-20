@@ -1,0 +1,632 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li,
+ul,
+a {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+colors {
+  color: hsl(0, 87%, 67%);
+  color: hsl(257, 27%, 26%);
+  color: hsl(180, 66%, 49%);
+  color: hsl(0, 0%, 75%);
+  color: hsl(257, 7%, 63%);
+  color: hsl(255, 11%, 22%);
+  color: hsl(260, 8%, 14%);
+}
+
+.nav {
+  visibility: hidden;
+}
+
+header {
+  display: flex;
+  padding: 2rem 10rem 3rem 5rem;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.navigation {
+  display: flex;
+  gap: 4rem;
+}
+
+.navigation_bar {
+  display: none;
+}
+
+.nav_bar ul {
+  list-style: none;
+  display: flex;
+  gap: 3rem;
+}
+
+.nav_bar ul li a {
+  text-decoration: none;
+  color: hsl(257, 7%, 63%);
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.nav_bar ul li a:hover {
+  color: hsl(260, 8%, 14%);
+  transition: all 0.75s ease;
+}
+
+.nav_login {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+}
+
+.login {
+  font-weight: 700;
+  font-size: 15px;
+  color: hsl(257, 7%, 63%);
+}
+.login:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.nav_login button {
+  padding: 0.6rem 1.5rem;
+  border: none;
+  border-radius: 2rem;
+  background-color: hsl(180, 66%, 49%);
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+button:hover {
+  opacity: 0.4;
+  transition: all 0.65s ease;
+  cursor: grab;
+}
+
+.section_01 {
+  display: flex;
+  gap: 3rem;
+  padding: 2rem 10rem 3rem 5rem;
+  align-items: center;
+}
+
+.illustration {
+  display: flex;
+  flex-direction: column;
+  /* text-align: center; */
+  /* align-items: center; */
+  gap: 1.5rem;
+}
+
+.illustration h1 {
+  font-weight: 700;
+  font-size: 3rem;
+  color: hsl(255, 11%, 22%);
+}
+
+.illustration p {
+  color: hsl(257, 7%, 63%);
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.section_01 .illustrating_working img {
+  width: 40rem;
+}
+
+.illustration button {
+  padding: 1rem 2.5rem;
+  border: none;
+  border-radius: 2rem;
+  background-color: hsl(180, 66%, 49%);
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.section_02 {
+  margin: 5rem 8rem;
+  border-radius: 0.8rem;
+  padding: 2.6rem;
+  background-color: hsl(257, 27%, 26%);
+  background-image: url(images/bg-shorten-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+.section_02 form {
+  display: flex;
+  gap: 2rem;
+}
+
+.section_02 form .text {
+  width: 45rem;
+  padding-left: 1.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.section_02 form .button {
+  padding: 1.2rem 3.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: hsl(180, 66%, 49%);
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.section_03 {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: center;
+  padding: 5rem 25rem;
+  background-color: hsl(0, 8%, 93%);
+}
+
+.section_03 h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: hsl(255, 11%, 22%);
+}
+
+.section_03 p {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  color: hsl(257, 7%, 63%);
+}
+
+.section_04 {
+  background-color: hsl(0, 8%, 93%);
+  display: flex;
+  gap: 2rem;
+  padding: 5rem 8rem 9rem 5rem;
+}
+
+.section_04 .card_01,
+.card_02,
+.card_03 {
+  background-color: white;
+  padding: 0.5rem 2rem 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-radius: 0.5rem;
+}
+
+.section_04 h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.section_04 p {
+  font-size: 15px;
+  font-weight: 700;
+  color: hsl(257, 7%, 63%);
+}
+
+.card_01 .icon_brand img {
+  padding: 1.2rem;
+  border: none;
+  background-color: hsl(257, 27%, 26%);
+  border-radius: 5rem;
+  position: relative;
+  bottom: 3.2rem;
+}
+
+.card_02 .detailed_record img {
+  padding: 1.2rem;
+  border: none;
+  background-color: hsl(257, 27%, 26%);
+  border-radius: 5rem;
+  position: relative;
+  bottom: 3.2rem;
+}
+
+.fully_customizable img {
+  padding: 1.2rem;
+  border: none;
+  background-color: hsl(257, 27%, 26%);
+  border-radius: 5rem;
+  position: relative;
+  bottom: 3.2rem;
+}
+
+.line {
+  border: 1px solid hsl(180, 66%, 49%);
+  justify-content: center;
+}
+
+.section_05 {
+  background-color: hsl(257, 27%, 26%);
+  background-image: url(images/bg-boost-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  align-items: center;
+  padding: 4rem 1.5rem 2rem 1.5rem;
+  color: white;
+}
+.section_05 h2 {
+  font-weight: 700;
+  font-size: 2.2rem;
+}
+
+.section_05 button {
+  margin-top: 1.5rem;
+  padding: 1.3rem 4rem;
+  border: none;
+  border-radius: 2rem;
+  background-color: hsl(180, 66%, 49%);
+  color: white;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+footer {
+  display: flex;
+  gap: 5rem;
+  justify-content: space-between;
+  background-color: hsl(260, 8%, 14%);
+  color: white;
+  padding: 5rem 8rem 3rem;
+}
+
+footer .footer_logo img {
+  background-color: white;
+}
+
+footer .features,
+.resources,
+.company {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.features_text ul,
+.resources_text ul,
+.company ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.features_text ul li a,
+.resources_text ul li a,
+.company ul li a {
+  text-decoration: none;
+  color: hsl(257, 7%, 63%);
+}
+
+footer ul li a:hover {
+  color: hsl(180, 66%, 49%);
+  transition: all 0.8s ease;
+}
+
+.footer_icon img:hover {
+  cursor: grab;
+}
+
+.footer_icon {
+  display: grid;
+  gap: 0.5rem;
+}
+
+@media only screen and (max-width: 770px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  li,
+  ul,
+  a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  colors {
+    color: hsl(0, 87%, 67%);
+    color: hsl(257, 27%, 26%);
+    color: hsl(180, 66%, 49%);
+    color: hsl(0, 0%, 75%);
+    color: hsl(257, 7%, 63%);
+    color: hsl(255, 11%, 22%);
+    color: hsl(260, 8%, 14%);
+  }
+
+  body {
+    background-color: hsl(0, 8%, 93%);
+  }
+
+  header {
+    display: flex;
+    padding: 2rem 1.5rem 3rem 1.5rem;
+  }
+
+  .login,
+  .sign_up,
+  .nav_bar {
+    display: none;
+  }
+
+  hr {
+    width: 20rem;
+  }
+
+  .navigation_bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    opacity: 0.9;
+    background-color: hsl(257, 27%, 26%);
+    margin-left: 5rem;
+    padding: 3rem 0rem;
+    border-radius: 0.5rem;
+    position: absolute;
+    top: 7rem;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .nav_bar_mobile ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .nav_bar_mobile ul li a {
+    text-decoration: none;
+    color: hsl(257, 7%, 63%);
+    font-weight: 700;
+    font-size: 15px;
+  }
+
+  .nav_bar_mobile ul li a:hover {
+    color: hsl(260, 8%, 14%);
+    transition: all 0.75s ease;
+  }
+
+  .nav_login_mobile {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .login_mobile {
+    font-weight: 700;
+    font-size: 15px;
+    color: hsl(257, 7%, 63%);
+  }
+  .login_mobile:hover {
+    cursor: pointer;
+    opacity: 0.5;
+  }
+
+  .nav_login_mobile button {
+    padding: 0.6rem 1.5rem;
+    border: none;
+    border-radius: 2rem;
+    background-color: hsl(180, 66%, 49%);
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  .nav {
+    visibility: visible;
+    cursor: grab;
+  }
+
+  .section_01 {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 2rem 1.5rem 3rem 1.5rem;
+  }
+
+  .section_01 .illustrating_working img {
+    width: 32rem;
+  }
+
+  .illustration {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .illustration button {
+    padding: 1.5rem 5rem;
+    border: none;
+    border-radius: 2rem;
+    background-color: hsl(180, 66%, 49%);
+    color: white;
+  }
+
+  .section_02 {
+    margin: 5rem 1.5rem;
+    border-radius: 0.8rem;
+    padding: 1.5rem;
+    background-color: hsl(257, 27%, 26%);
+    background-image: url(images/bg-shorten-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: top right;
+  }
+
+  .section_02 form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .section_02 form .text,
+  .button {
+    width: auto;
+    padding: 1.2rem 0.5rem;
+    border: none;
+    border-radius: 0.5rem;
+  }
+
+  .section_03 {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+    padding: 2rem 1.5rem 3rem 1.5rem;
+  }
+
+  .section_04 {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 1.5rem 3rem 1.5rem;
+  }
+
+  .section_04 .card_01,
+  .card_02,
+  .card_03 {
+    background-color: white;
+    padding: 0rem 1rem 3rem;
+    display: flex;
+    gap: 1rem;
+    text-align: center;
+    border-radius: 0.5rem;
+  }
+
+  .card_01 .icon_brand img {
+    padding: 2rem;
+    border: none;
+    background-color: hsl(257, 27%, 26%);
+    /* backdrop-filter: ; */
+    border-radius: 5rem;
+    position: relative;
+    bottom: 3.2rem;
+  }
+
+  .card_02 .detailed_record img,
+  .fully_customizable img {
+    padding: 2rem;
+    border: none;
+    background-color: hsl(257, 27%, 26%);
+    border-radius: 5rem;
+    position: relative;
+    bottom: 3.2rem;
+  }
+
+  .line {
+    width: 1px;
+    height: 7rem;
+    border: 5px solid hsl(180, 66%, 49%);
+    margin-left: 50%;
+    margin-right: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .section_05 {
+    background-color: hsl(257, 27%, 26%);
+    background-image: url(images/bg-boost-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    align-items: center;
+    padding: 7rem 1.5rem 5.8rem 1.5rem;
+    color: white;
+  }
+
+  .section_05 button {
+    margin-top: 1.5rem;
+    padding: 1.5rem 5rem;
+    border: none;
+    border-radius: 2rem;
+    background-color: hsl(180, 66%, 49%);
+    color: white;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    align-items: center;
+    text-align: center;
+    background-color: hsl(260, 8%, 14%);
+    color: white;
+    padding: 3rem 0rem;
+  }
+
+  footer .footer_logo img {
+    background-color: white;
+  }
+
+  footer .features,
+  .resources,
+  .company {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .features_text ul,
+  .resources_text ul,
+  .company ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .features_text ul li a,
+  .resources_text ul li a,
+  .company ul li a {
+    text-decoration: none;
+    color: hsl(257, 7%, 63%);
+  }
+
+  .footer_icon {
+    display: flex;
+    gap: 1.5rem;
+  }
+}
